@@ -11,7 +11,8 @@ import SwiftUI
 struct ContactGeneratorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MVVMContactListView()
         }
+        // .modelContainer(for: [Contact.self])
     }
 }
