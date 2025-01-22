@@ -20,9 +20,24 @@ class SwiftDataContextManager{
             container = try ModelContainer(for: Contact.self)
             if let container {
                 context = ModelContext(container)
+                prepopulateContacts()
             }
         } catch {
             debugPrint("Error initializing database container:", error)
+        }
+    }
+}
+
+fileprivate extension SwiftDataContextManager {
+    private func prepopulateContacts() {
+        guard let context = context else { return }
+        
+        let fetchDescriptior = FetchDescriptor<Contact>()
+        guard let entities = try? context.fetch(fetchDescriptior) else { return }
+        
+        if entities.isEmpty {
+            Contact.contacts.forEach { contact in context.insert(contact) }
+            try? context.save()
         }
     }
 }
