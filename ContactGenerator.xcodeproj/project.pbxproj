@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		C73E48BC2D41571B001DD7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C70B9CD52D3CBA200097BAD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70B9CDC2D3CBA200097BAD8;
+			remoteInfo = ContactGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C70B9CDD2D3CBA200097BAD8 /* ContactGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73E48B82D41571B001DD7C5 /* ContactGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = ContactGenerator;
 			sourceTree = "<group>";
 		};
+		C73E48B92D41571B001DD7C5 /* ContactGeneratorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ContactGeneratorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C70B9CDA2D3CBA200097BAD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73E48B52D41571B001DD7C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				C70B9CDF2D3CBA200097BAD8 /* ContactGenerator */,
+				C73E48B92D41571B001DD7C5 /* ContactGeneratorTests */,
 				C70B9CDE2D3CBA200097BAD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				C70B9CDD2D3CBA200097BAD8 /* ContactGenerator.app */,
+				C73E48B82D41571B001DD7C5 /* ContactGeneratorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = C70B9CDD2D3CBA200097BAD8 /* ContactGenerator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C73E48B72D41571B001DD7C5 /* ContactGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73E48C02D41571B001DD7C5 /* Build configuration list for PBXNativeTarget "ContactGeneratorTests" */;
+			buildPhases = (
+				C73E48B42D41571B001DD7C5 /* Sources */,
+				C73E48B52D41571B001DD7C5 /* Frameworks */,
+				C73E48B62D41571B001DD7C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C73E48BD2D41571B001DD7C5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C73E48B92D41571B001DD7C5 /* ContactGeneratorTests */,
+			);
+			name = ContactGeneratorTests;
+			packageProductDependencies = (
+			);
+			productName = ContactGeneratorTests;
+			productReference = C73E48B82D41571B001DD7C5 /* ContactGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					C70B9CDC2D3CBA200097BAD8 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					C73E48B72D41571B001DD7C5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = C70B9CDC2D3CBA200097BAD8;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				C70B9CDC2D3CBA200097BAD8 /* ContactGenerator */,
+				C73E48B72D41571B001DD7C5 /* ContactGeneratorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C70B9CDB2D3CBA200097BAD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73E48B62D41571B001DD7C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C73E48B42D41571B001DD7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C73E48BD2D41571B001DD7C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C70B9CDC2D3CBA200097BAD8 /* ContactGenerator */;
+			targetProxy = C73E48BC2D41571B001DD7C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C70B9CE92D3CBA210097BAD8 /* Debug */ = {
@@ -302,6 +377,42 @@
 			};
 			name = Release;
 		};
+		C73E48BE2D41571B001DD7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5SU889K9XY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrenthiores.ContactGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ContactGenerator";
+			};
+			name = Debug;
+		};
+		C73E48BF2D41571B001DD7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5SU889K9XY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrenthiores.ContactGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ContactGenerator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +430,15 @@
 			buildConfigurations = (
 				C70B9CEC2D3CBA210097BAD8 /* Debug */,
 				C70B9CED2D3CBA210097BAD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C73E48C02D41571B001DD7C5 /* Build configuration list for PBXNativeTarget "ContactGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73E48BE2D41571B001DD7C5 /* Debug */,
+				C73E48BF2D41571B001DD7C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
